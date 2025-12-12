@@ -1,5 +1,22 @@
 # detecting-machine-generated-code
 
+
+## Similarity Model Pipeline for SemEval-2026 Task 13 Task A (All in the "GraphCodeBERT" Folder)
+
+The pipeline first rewrites the test code input with an LLM. After rewriting, we use our similarity model to compare whether the original and rewritten codes are similar. If so, that means that the original was AI-generated, otherwise it was human-written.
+
+# Models
+We utilized GraphCodeBERT as a baseline and fine-tuned it to be a similarity model.
+
+# Dataset
+We used the CodeXGLUE Clone-detection-BigCloneBench dataset for training since it contains a lot of data about code similarity with different coding languages.
+
+# File Descriptions
+
+Task-A-similarity-clone-dataset.ipynb file the model file where we train using the CodeXGLUE Clone-detection-BigCloneBench dataset.
+automate.py is code for the pipeline where we rewrite each row of the test set and have the similarity model predict.
+
+
 ## Binary Classifiers for SemEval-2026 Task 13 Task A
 
 binaryclassifiers contains fine-tuned binary classification models for SemEval-2026 Task 13: Detecting AI-Generated Code. The models are designed to distinguish between human-written and machine-generated code using the Task A dataset.
