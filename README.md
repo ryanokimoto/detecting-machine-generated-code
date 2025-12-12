@@ -13,8 +13,8 @@ We used the CodeXGLUE Clone-detection-BigCloneBench dataset for training since i
 
 ## File Descriptions
 
-Task-A-similarity-clone-dataset.ipynb file the model file where we train using the CodeXGLUE Clone-detection-BigCloneBench dataset.
-automate.py is code for the pipeline where we rewrite each row of the test set and have the similarity model predict.
+- **Task-A-similarity-clone-dataset.ipynb** file the model file where we train using the CodeXGLUE Clone-detection-BigCloneBench dataset.
+- **automate.py** is code for the pipeline where we rewrite each row of the test set and have the similarity model predict.
 
 
 # Binary Classifiers for SemEval-2026 Task 13 Task A
