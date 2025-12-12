@@ -1,5 +1,4 @@
 class CodeFeatures:
-    """Container for extracted code features"""
     line_count: int = 0
     char_count: int = 0
     avg_line_length: float = 0.0
